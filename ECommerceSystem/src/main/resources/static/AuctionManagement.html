@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Management Page</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Auction Management Page</h1>
+    </header>
+    <form action="/Main/CreateAuction" method="GET">
+        <label>Create Auction:</label>
+        <input type="radio" name="auction_type" value="Forward"> Forward Auction Bidding
+        <input type="radio" name="auction_type" value="Dutch"> Dutch Auction Bidding
+        <button type="submit">Create</button>
+    </form>
+    <form action="/Main/DeleteAuction" method="GET">
+        <label>Delete Auction:</label>
+        <input type="number" name="id" placeholder="id">
+        <button type="submit">Delete</button>
+    </form>
+    <a href="/Main/editAuction">Edit Auction</a>
+    <a href="/Main/AuctionList">Back to Auction list page</a>
+    <a href="/Main/MainPage">Main Page</a>
+
+
+
+</body>
+</html>

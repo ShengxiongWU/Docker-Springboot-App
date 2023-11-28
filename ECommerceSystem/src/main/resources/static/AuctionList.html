@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuctionListPage</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Auction List Page</h1>
+    </header>
+    <a href="/Main/AuctionManagement" method = "GET">Auction Management</a>
+    <a href="/Main/MainPage">Main Page</a>
+<!--    <form action="/search" method="GET">-->
+<!--        <label>Search:</label>-->
+<!--        <input type="number" name="id" placeholder="id">-->
+<!--        <input type="datetime-local" name="StartTime" placeholder="StartTime">-->
+<!--        <input type="datetime-local" name="EndTime" placeholder="EndTime">-->
+<!--        <input type="text" name="AuctionState" placeholder="AuctionState">-->
+<!--        <button type="submit">Search</button>-->
+<!--    </form>-->
+
+    <div class="container">
+        <table id="auctionTable" border="1">
+            <tr>
+                <th>Auction ID</th>
+                <th>Create Time</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Seller</th>
+                <th>Starting Price</th>
+                <th>Current Highest Price</th>
+                <th>Current Highest User</th>
+                <th>Auction State</th>
+                <th>Auction Type</th>
+                <th><input type = "number" id = "bid" name = "bid"></th>
+            </tr>
+        </table>
+    </div>
+
+
+    <script>
+        function AttendAuction(id) {
+            window.location.href = '/Main/Auction?id=' + id+'&bid='+document.getElementById("bid").value;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductListPage</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Product List Page</h1>
+    </header>
+    <a href="/Main/InventoryManagement" method = "GET">Inventory Management</a>
+    <a href="/Main/MainPage">Main Page</a>
+    <form action="/search" method="GET">
+        <label>Search:</label>
+        <input type="number" name="id" placeholder="id">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="category" placeholder="category">
+        <input type="number" name="sellerid" placeholder="sellerid">
+        <button type="submit">Search</button>
+    </form>
+
+	<div class = "container">
+		<table id="productTable" border="1">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Category</th>
+				<th>Seller</th>
+                <th>Number of Item</th>
+			</tr>
+		</table>
+	</div>
+
+	
+
+
+</body>
+</html>

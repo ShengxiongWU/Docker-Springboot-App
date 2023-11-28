@@ -1,0 +1,3 @@
+https://docs.google.com/document/d/1CuMbvLoPgZqA3Gm088PC1kaTe1qyOfB8XSyo2ELlVO8/edit?usp=sharing
+
+in order to user it, just use http://localhost:5000/Home to start

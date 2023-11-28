@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Edit Page</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Auction Edit Page</h1>
+    </header>
+    <form action="/Main/AuctionSetStartTime" method="GET">
+        <label>Set Auction Start Time:</label>
+        <input type="number" name="auction_id" placeholder="auction_id">
+        <input type="datetime-local" name="auction_start_time">
+        <button type="submit">Set</button>
+    </form>
+
+    <form action="/Main/AuctionSetEndTime" method="GET">
+        <label>Set Auction End Time:</label>
+        <input type="number" name="auction_id" placeholder="auction_id">
+        <input type="datetime-local" name="auction_end_time">
+        <button type="submit">Set</button>
+    </form>
+
+    <form action="/Main/AuctionSetStartPrice" method="GET">
+        <label>Set Auction Start Price:</label>
+        <input type="number" name="auction_id" placeholder="auction_id">
+        <input type="number" name="auction_start_price">
+        <button type="submit">Set</button>
+    </form>
+
+    <form action="/Main/AuctionSetMinIncrePrice" method="GET">
+        <label>Set Auction Min Increase Price:</label>
+        <input type="number" name="auction_id" placeholder="auction_id">
+        <input type="number" name="auction_min_price">
+        <button type="submit">Set</button>
+    </form>
+
+
+    <a href="/Main/AuctionList">Back to Auction list page</a>
+    <a href="/Main/MainPage">Main Page</a>
+
+
+
+</body>
+</html>

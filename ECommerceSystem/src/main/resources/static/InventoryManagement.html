@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management Page</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Inventory Management Page</h1>
+    </header>
+    <form action="/Main/CreateProduct" method="GET">
+        <label>Add product:</label>
+        <input type="text" name="name" placeholder="name" required>
+        <input type="text" name="category" placeholder="category" required>
+        <input type="number" name="numberofitem" placeholder="numberofitem" required>
+        <button type="submit">Add</button>
+    </form>
+    <form action="/Main/DeleteProduct" method="GET">
+        <label>Delete product:</label>
+        <input type="number" name="id" placeholder="id">
+        <button type="submit">Delete</button>
+    </form>
+
+    <a href="/productList">Back to product list page</a>
+    <a href="/Main/MainPage">Main Page</a>
+
+
+
+</body>
+</html>
